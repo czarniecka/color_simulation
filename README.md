@@ -19,16 +19,16 @@ Color Simulation to symulacja oparta na wątkach, napisana w Javie z wykorzystan
 
 ## Instalacja i uruchomienie
 
-Kompilacja:
+	- Kompilacja:
 	```bash
 	javac --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml -d . SimulationGUI.java
 	```
-Uruchomienie:
+	- Uruchomienie:
 	```bash
 	java --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml SimulationGUI n m p v
 	```
-	   - `n` - liczba wierszy na planszy.
-	   - `m` - liczba kolumn na planszy.
-	   - `p` - prawdopodobieństwo zmiany koloru na losowy.
-	   - `v` - szybkość.
+		   - `n` - liczba wierszy na planszy.
+		   - `m` - liczba kolumn na planszy.
+		   - `p` - prawdopodobieństwo zmiany koloru na losowy.
+		   - `v` - szybkość.
 
