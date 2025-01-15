@@ -1,0 +1,93 @@
+\hypertarget{classField}{}\doxysection{Field Class Reference}
+\label{classField}\index{Field@{Field}}
+
+
+Inheritance diagram for Field\+:
+% FIG 0
+
+
+Collaboration diagram for Field\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classField_ad9e68aa7d9c9b395a925f775fe405fb3}{Field}} (int row, int column, int size, \mbox{\hyperlink{classSimulation}{Simulation}} simulation)
+\item 
+Color \mbox{\hyperlink{classField_abae0f30c858a66446a0685583be516cb}{generate\+Random\+Color}} ()
+\item 
+Color\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classField_a2a5b34ea41abfaf070897a90b0d5e127}{get\+Neighbor\+Colors}} ()
+\item 
+boolean \mbox{\hyperlink{classField_aef870eae2fb8eb9735e5f95ec9e9a6c7}{is\+Suspended}} ()
+\item 
+void \mbox{\hyperlink{classField_a119d3a5e08293990c272c71371fbb25e}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classField_a00ce24ba2247e4b27b8e17fd25e14ae9}\label{classField_a00ce24ba2247e4b27b8e17fd25e14ae9}} 
+final \mbox{\hyperlink{classSimulation}{Simulation}} {\bfseries simulation}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{classField}{Field}} dziedzicząca po Rectangle i implementująca Runnable. Klasa reprezentująca pojedyncze pole w symulacji. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classField_ad9e68aa7d9c9b395a925f775fe405fb3}\label{classField_ad9e68aa7d9c9b395a925f775fe405fb3}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}}
+{\footnotesize\ttfamily Field.\+Field (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column,  }\item[{int}]{size,  }\item[{\mbox{\hyperlink{classSimulation}{Simulation}}}]{simulation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor klasy \mbox{\hyperlink{classField}{Field}} Wywołuje konstruktor klasy nadrzędnej (Rectangle). 
+\begin{DoxyParams}{Parameters}
+{\em row} & numer wiersza pola \\
+\hline
+{\em column} & numer kolumny pola \\
+\hline
+{\em size} & rozmiar pola \\
+\hline
+{\em simulation} & obiekt symulacji \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classField_abae0f30c858a66446a0685583be516cb}\label{classField_abae0f30c858a66446a0685583be516cb}} 
+\index{Field@{Field}!generateRandomColor@{generateRandomColor}}
+\index{generateRandomColor@{generateRandomColor}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{generateRandomColor()}{generateRandomColor()}}
+{\footnotesize\ttfamily Color Field.\+generate\+Random\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda generuje losowy kolor na podstawie składowych. \begin{DoxyReturn}{Returns}
+wygenerowany losowy kolor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classField_a2a5b34ea41abfaf070897a90b0d5e127}\label{classField_a2a5b34ea41abfaf070897a90b0d5e127}} 
+\index{Field@{Field}!getNeighborColors@{getNeighborColors}}
+\index{getNeighborColors@{getNeighborColors}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{getNeighborColors()}{getNeighborColors()}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} Field.\+get\+Neighbor\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda zwraca kolory pól sąsiadujących. \begin{DoxyReturn}{Returns}
+tablica kolorów pól sąsiadujących 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classField_aef870eae2fb8eb9735e5f95ec9e9a6c7}\label{classField_aef870eae2fb8eb9735e5f95ec9e9a6c7}} 
+\index{Field@{Field}!isSuspended@{isSuspended}}
+\index{isSuspended@{isSuspended}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{isSuspended()}{isSuspended()}}
+{\footnotesize\ttfamily boolean Field.\+is\+Suspended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda sprawdza, czy pole jest zawieszone. \begin{DoxyReturn}{Returns}
+true (jeśli pole jest zawieszone); false (jeśli pole nie jest zawieszone) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classField_a119d3a5e08293990c272c71371fbb25e}\label{classField_a119d3a5e08293990c272c71371fbb25e}} 
+\index{Field@{Field}!run@{run}}
+\index{run@{run}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Field.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda, która uruchamia się, gdy wątek jest uruchomiony. Sprawdza, czy pole jest zawieszone, i jeśli nie, to uruchamia symulację i czeka na określone opóźnienie. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Field.\+java\end{DoxyCompactItemize}

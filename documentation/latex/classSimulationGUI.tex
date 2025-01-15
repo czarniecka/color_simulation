@@ -1,0 +1,81 @@
+\hypertarget{classSimulationGUI}{}\doxysection{Simulation\+GUI Class Reference}
+\label{classSimulationGUI}\index{SimulationGUI@{SimulationGUI}}
+
+
+Inheritance diagram for Simulation\+GUI\+:
+% FIG 0
+
+
+Collaboration diagram for Simulation\+GUI\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSimulationGUI_aa572fd47380192fa46fdd932c7c56354}{create\+Grid\+Pane}} (Grid\+Pane grid\+Pane)
+\item 
+void \mbox{\hyperlink{classSimulationGUI_a5bee4869156dbf6c0fff45634b404e46}{start}} (Stage stage)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classSimulationGUI_a420e6de583213611a35222d960e9630e}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSimulationGUI_a6a6f8ccd458d18789423dea16a782f04}\label{classSimulationGUI_a6a6f8ccd458d18789423dea16a782f04}} 
+static int {\bfseries all\+Rows}
+\item 
+\mbox{\Hypertarget{classSimulationGUI_a15c7485270e79924834c43f2d1a7b44e}\label{classSimulationGUI_a15c7485270e79924834c43f2d1a7b44e}} 
+static int {\bfseries all\+Columns}
+\item 
+\mbox{\Hypertarget{classSimulationGUI_a4f3c6d441e3b1599ec798798e9e5f50d}\label{classSimulationGUI_a4f3c6d441e3b1599ec798798e9e5f50d}} 
+static final int {\bfseries field\+Size} = 40
+\item 
+\mbox{\Hypertarget{classSimulationGUI_afc6be9b1d2c9ce780368ecd5af11c019}\label{classSimulationGUI_afc6be9b1d2c9ce780368ecd5af11c019}} 
+static \mbox{\hyperlink{classField}{Field}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries all\+Fields}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{classSimulationGUI}{Simulation\+GUI}} jest rozszerzeniem klasy Application. Tworzy graficzny interfejs użytkownika (GUI) do symulacji kolorów. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSimulationGUI_aa572fd47380192fa46fdd932c7c56354}\label{classSimulationGUI_aa572fd47380192fa46fdd932c7c56354}} 
+\index{SimulationGUI@{SimulationGUI}!createGridPane@{createGridPane}}
+\index{createGridPane@{createGridPane}!SimulationGUI@{SimulationGUI}}
+\doxysubsubsection{\texorpdfstring{createGridPane()}{createGridPane()}}
+{\footnotesize\ttfamily void Simulation\+GUI.\+create\+Grid\+Pane (\begin{DoxyParamCaption}\item[{Grid\+Pane}]{grid\+Pane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda tworzy Grid\+Pane i dodaje do niego obiekty \mbox{\hyperlink{classField}{Field}} na podstawie określonej liczby kolumn i wierszy. 
+\begin{DoxyParams}{Parameters}
+{\em grid\+Pane} & obiekt klasy Grid\+Pane, do którego dodawane są obiekty \mbox{\hyperlink{classField}{Field}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSimulationGUI_a420e6de583213611a35222d960e9630e}\label{classSimulationGUI_a420e6de583213611a35222d960e9630e}} 
+\index{SimulationGUI@{SimulationGUI}!main@{main}}
+\index{main@{main}!SimulationGUI@{SimulationGUI}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Simulation\+GUI.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Główna metoda programu. Pobiera argumenty po kolei\+: ilość kolumn, ilość wierszy, prawdopodobieństwo, szybkość. Inicjalizuje pola i uruchamia program. 
+\begin{DoxyParams}{Parameters}
+{\em args} & argumenty wiersza poleceń przekazywane do programu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSimulationGUI_a5bee4869156dbf6c0fff45634b404e46}\label{classSimulationGUI_a5bee4869156dbf6c0fff45634b404e46}} 
+\index{SimulationGUI@{SimulationGUI}!start@{start}}
+\index{start@{start}!SimulationGUI@{SimulationGUI}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Simulation\+GUI.\+start (\begin{DoxyParamCaption}\item[{Stage}]{stage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda start uruchamiana przez metodę main. Tworzy Grid\+Pane i ustawia scenę. Zawiera pętlę, która tworzy i uruchamia wątki dla każdego pola. 
+\begin{DoxyParams}{Parameters}
+{\em stage} & obiekt klasy Stage, na którym wyświetlana jest aplikacja \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Simulation\+GUI.\+java\end{DoxyCompactItemize}

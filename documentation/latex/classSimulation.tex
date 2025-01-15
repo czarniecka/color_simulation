@@ -1,0 +1,78 @@
+\hypertarget{classSimulation}{}\doxysection{Simulation Class Reference}
+\label{classSimulation}\index{Simulation@{Simulation}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSimulation_a49cf55e0d23e4a7f377b093895961d43}{Simulation}} (double probability, int speed)
+\item 
+int \mbox{\hyperlink{classSimulation_a7c77aaa13ca728e3c44db0f6b0096e46}{generate\+Delay}} ()
+\item 
+\mbox{\hyperlink{classField}{Field}} \mbox{\hyperlink{classSimulation_a7bc91af418b032b1021e1a5361d03f31}{get\+Field}} (int row, int column)
+\item 
+void \mbox{\hyperlink{classSimulation_a437c9d78d9c4a30f6a6b4219382bd821}{start\+Simulation}} (int row, int column)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \mbox{\hyperlink{classSimulation}{Simulation}} zawiera symulację zmainy kolorów pól programu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSimulation_a49cf55e0d23e4a7f377b093895961d43}\label{classSimulation_a49cf55e0d23e4a7f377b093895961d43}} 
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\doxysubsubsection{\texorpdfstring{Simulation()}{Simulation()}}
+{\footnotesize\ttfamily Simulation.\+Simulation (\begin{DoxyParamCaption}\item[{double}]{probability,  }\item[{int}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor klasy \mbox{\hyperlink{classSimulation}{Simulation}}. 
+\begin{DoxyParams}{Parameters}
+{\em probability} & prawdopodobieństwo zmiany koloru na losowy \\
+\hline
+{\em speed} & szybkość symulacji \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSimulation_a7c77aaa13ca728e3c44db0f6b0096e46}\label{classSimulation_a7c77aaa13ca728e3c44db0f6b0096e46}} 
+\index{Simulation@{Simulation}!generateDelay@{generateDelay}}
+\index{generateDelay@{generateDelay}!Simulation@{Simulation}}
+\doxysubsubsection{\texorpdfstring{generateDelay()}{generateDelay()}}
+{\footnotesize\ttfamily int Simulation.\+generate\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda generuje opóźnienie na podstawie szybkości symulacji. \begin{DoxyReturn}{Returns}
+opóźnienie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSimulation_a7bc91af418b032b1021e1a5361d03f31}\label{classSimulation_a7bc91af418b032b1021e1a5361d03f31}} 
+\index{Simulation@{Simulation}!getField@{getField}}
+\index{getField@{getField}!Simulation@{Simulation}}
+\doxysubsubsection{\texorpdfstring{getField()}{getField()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classField}{Field}} Simulation.\+get\+Field (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda zwraca pole na podstawie kolumny i wiersza. 
+\begin{DoxyParams}{Parameters}
+{\em column} & numer kolumny pola \\
+\hline
+{\em row} & numer wiersza pola \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pole 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSimulation_a437c9d78d9c4a30f6a6b4219382bd821}\label{classSimulation_a437c9d78d9c4a30f6a6b4219382bd821}} 
+\index{Simulation@{Simulation}!startSimulation@{startSimulation}}
+\index{startSimulation@{startSimulation}!Simulation@{Simulation}}
+\doxysubsubsection{\texorpdfstring{startSimulation()}{startSimulation()}}
+{\footnotesize\ttfamily void Simulation.\+start\+Simulation (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metoda rozpoczyna symulację dla określonego wiersza i kolumny. Na podstawie kolorów aktywnych pól sąsiadujących, oblicza średnią ich kolorów. W zależności od prawdopodobieństwa zmienia kolor pola na obliczony lub losowy. 
+\begin{DoxyParams}{Parameters}
+{\em column} & numer kolumny pola \\
+\hline
+{\em row} & numer wiersza pola \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Simulation.\+java\end{DoxyCompactItemize}
